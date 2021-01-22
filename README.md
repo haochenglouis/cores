@@ -11,7 +11,7 @@ Torchvision 0.5.0
 
 
 ## Steps on Runing CORES on CIFAR 10
-###Step 1: 
+### Step 1: 
 
 Download the datset from **http://www.cs.toronto.edu/~kriz/cifar.html** Put the dataset on **data/**
 
