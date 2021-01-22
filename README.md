@@ -15,7 +15,7 @@ Torchvision 0.5.0
 
 Download the datset from **http://www.cs.toronto.edu/~kriz/cifar.html** Put the dataset on **data/**
 
-Install theconf by **pip install git+https://github.com/wbaek/theconf**
+Install theconf by **pip install git+https://github.com/wbaek/theconf.git**
 
 
 ### Step 2:
