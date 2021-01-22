@@ -1,5 +1,5 @@
 # Learning with Instance-Dependent Label Noise: A Sample Sieve Approach
-This code is a PyTorch implementation of our paper "Learning with Instance-Dependent Label Noise: A Sample Sieve Approach" accepted by ICLR2021.
+This code is a PyTorch implementation of our paper "[Learning with Instance-Dependent Label Noise: A Sample Sieve Approach](https://arxiv.org/abs/2010.02347)" accepted by ICLR2021.
 
 The code is run on the Tesla V-100.
 ## Prerequisites
