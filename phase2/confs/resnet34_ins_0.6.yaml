@@ -1,0 +1,27 @@
+model:
+  type: resnet34
+dataset: cifar10
+aug: autoaug_cifar10   # autoaug_extend
+cutout: 16
+batch: 320
+batch_unsup: 240
+ratio_unsup: 0.9
+ratio_mode: 'constant'
+epoch: 1600
+lr: 0.001
+lr_schedule:
+  type: 'cosine'
+  warmup:
+    multiplier: 300
+    epoch: 120
+optimizer:
+  type: sgd
+  nesterov: True
+  decay: 0.0005
+
+random_state: 0
+train_labels: '../results/cifar10/resnet/coresinstance0.6train_noisy_labels.npy'
+unsup_idx: '../results/cifar10/resnet/coresinstance0.6_noise_pred.npy'
+pretrain: ''
+
+tqdm_disable: False

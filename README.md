@@ -20,17 +20,17 @@ Install theconf by **pip install git+https://github.com/wbaek/theconf.git**
 
 ### Step 2:
 
-Run CORES (Phase 1: Sample Sieve) on CIFAR-10 with instance 0.4 noise:
+Run CORES (Phase 1: Sample Sieve) on CIFAR-10 with instance 0.6 noise:
 
 ```
-CUDA_VISIBLE_DEVICES=0 python phase1.py --loss cores --dataset cifar10 --model resnet --noise_type instance --noise_rate 0.4
+CUDA_VISIBLE_DEVICES=0 python phase1.py --loss cores --dataset cifar10 --model resnet --noise_type instance --noise_rate 0.6
 ```
 ### Step 3:
-Run CORES (Phase 2: Consistency Training) on the CIFAR-10 with instance 0.4 noise:
+Run CORES (Phase 2: Consistency Training) on the CIFAR-10 with instance 0.6 noise:
 
 ```
 cd phase2
-CUDA_VISIBLE_DEVICES=0,1 python phase2.py -c confs/resnet34_ins_0.4.yaml --unsupervised
+CUDA_VISIBLE_DEVICES=0,1 python phase2.py -c confs/resnet34_ins_0.6.yaml --unsupervised
 ```
 **Both Phase 1 and Phase 2 do not need pre-trained model.**
 
